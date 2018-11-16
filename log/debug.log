@@ -1,0 +1,326 @@
+%(asctime)s|execute|(0.033) SELECT @@SQL_AUTO_IS_NULL; args=None
+%(asctime)s|execute|(0.004) SELECT VERSION(); args=None
+%(asctime)s|execute|(0.012) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+%(asctime)s|execute|(0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+%(asctime)s|execute|(0.003) SELECT VERSION(); args=None
+%(asctime)s|execute|(0.004) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+%(asctime)s|execute|(0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+%(asctime)s|execute|(0.001) SELECT VERSION(); args=None
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|CREATE TABLE `django_migrations` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime(6) NOT NULL); (params None)
+%(asctime)s|execute|(0.020) CREATE TABLE `django_migrations` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime(6) NOT NULL); args=None
+%(asctime)s|execute|(0.004) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+%(asctime)s|execute|(0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+%(asctime)s|execute|(0.004) SELECT @@SQL_AUTO_IS_NULL; args=None
+%(asctime)s|execute|(0.004) SELECT VERSION(); args=None
+%(asctime)s|execute|(0.004) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+%(asctime)s|execute|(0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+%(asctime)s|execute|(0.003) SELECT @@sql_mode; args=None
+%(asctime)s|execute|(0.003) SELECT VERSION(); args=None
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+%(asctime)s|execute|CREATE TABLE `django_content_type` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(100) NOT NULL, `app_label` varchar(100) NOT NULL, `model` varchar(100) NOT NULL); (params None)
+%(asctime)s|execute|(0.015) CREATE TABLE `django_content_type` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(100) NOT NULL, `app_label` varchar(100) NOT NULL, `model` varchar(100) NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_content_type'; args=['django_content_type']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_content_type'; args=['django_content_type']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_content_type'; args=['django_content_type']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_content_type'; args=['django_content_type']
+%(asctime)s|execute|ALTER TABLE `django_content_type` ADD CONSTRAINT `django_content_type_app_label_model_76bd3d3b_uniq` UNIQUE (`app_label`, `model`); (params ())
+%(asctime)s|execute|(0.009) ALTER TABLE `django_content_type` ADD CONSTRAINT `django_content_type_app_label_model_76bd3d3b_uniq` UNIQUE (`app_label`, `model`); args=()
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('contenttypes', '0001_initial', '2018-11-16 10:38:14.215395'); args=['contenttypes', '0001_initial', '2018-11-16 10:38:14.215395']
+%(asctime)s|execute|ALTER TABLE `django_content_type` MODIFY `name` varchar(100) NULL; (params [])
+%(asctime)s|execute|(0.021) ALTER TABLE `django_content_type` MODIFY `name` varchar(100) NULL; args=[]
+%(asctime)s|execute|ALTER TABLE `django_content_type` DROP COLUMN `name`; (params ())
+%(asctime)s|execute|(0.021) ALTER TABLE `django_content_type` DROP COLUMN `name`; args=()
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('contenttypes', '0002_remove_content_type_name', '2018-11-16 10:38:14.285688'); args=['contenttypes', '0002_remove_content_type_name', '2018-11-16 10:38:14.285688']
+%(asctime)s|execute|CREATE TABLE `auth_permission` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL, `content_type_id` integer NOT NULL, `codename` varchar(100) NOT NULL); (params None)
+%(asctime)s|execute|(0.064) CREATE TABLE `auth_permission` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(50) NOT NULL, `content_type_id` integer NOT NULL, `codename` varchar(100) NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_permission'; args=['auth_permission']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_permission'; args=['auth_permission']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_permission'; args=['auth_permission']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_permission'; args=['auth_permission']
+%(asctime)s|execute|CREATE TABLE `auth_group` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(80) NOT NULL UNIQUE); (params None)
+%(asctime)s|execute|(0.014) CREATE TABLE `auth_group` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(80) NOT NULL UNIQUE); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group'; args=['auth_group']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group'; args=['auth_group']
+%(asctime)s|execute|CREATE TABLE `auth_group_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `group_id` integer NOT NULL, `permission_id` integer NOT NULL); (params None)
+%(asctime)s|execute|(0.013) CREATE TABLE `auth_group_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `group_id` integer NOT NULL, `permission_id` integer NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group_permissions'; args=['auth_group_permissions']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group_permissions'; args=['auth_group_permissions']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'auth_group_permissions'; args=['auth_group_permissions']
+%(asctime)s|execute|ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_2f476e4b_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params ())
+%(asctime)s|execute|(0.025) ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_2f476e4b_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); args=()
+%(asctime)s|execute|ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_codename_01ab375a_uniq` UNIQUE (`content_type_id`, `codename`); (params ())
+%(asctime)s|execute|(0.014) ALTER TABLE `auth_permission` ADD CONSTRAINT `auth_permission_content_type_id_codename_01ab375a_uniq` UNIQUE (`content_type_id`, `codename`); args=()
+%(asctime)s|execute|ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_b120cbf9_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params ())
+%(asctime)s|execute|(0.023) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_b120cbf9_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); args=()
+%(asctime)s|execute|ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissio_permission_id_84c5c92e_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params ())
+%(asctime)s|execute|(0.026) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissio_permission_id_84c5c92e_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); args=()
+%(asctime)s|execute|ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_permission_id_0cd325b0_uniq` UNIQUE (`group_id`, `permission_id`); (params ())
+%(asctime)s|execute|(0.015) ALTER TABLE `auth_group_permissions` ADD CONSTRAINT `auth_group_permissions_group_id_permission_id_0cd325b0_uniq` UNIQUE (`group_id`, `permission_id`); args=()
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0001_initial', '2018-11-16 10:38:14.536624'); args=['auth', '0001_initial', '2018-11-16 10:38:14.536624']
+%(asctime)s|execute|ALTER TABLE `auth_permission` MODIFY `name` varchar(255) NOT NULL; (params [])
+%(asctime)s|execute|(0.023) ALTER TABLE `auth_permission` MODIFY `name` varchar(255) NOT NULL; args=[]
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0002_alter_permission_name_max_length', '2018-11-16 10:38:14.578711'); args=['auth', '0002_alter_permission_name_max_length', '2018-11-16 10:38:14.578711']
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0003_alter_user_email_max_length', '2018-11-16 10:38:14.598355'); args=['auth', '0003_alter_user_email_max_length', '2018-11-16 10:38:14.598355']
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0004_alter_user_username_opts', '2018-11-16 10:38:14.617735'); args=['auth', '0004_alter_user_username_opts', '2018-11-16 10:38:14.617735']
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0005_alter_user_last_login_null', '2018-11-16 10:38:14.636828'); args=['auth', '0005_alter_user_last_login_null', '2018-11-16 10:38:14.636828']
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0006_require_contenttypes_0002', '2018-11-16 10:38:14.651641'); args=['auth', '0006_require_contenttypes_0002', '2018-11-16 10:38:14.651641']
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0007_alter_validators_add_error_messages', '2018-11-16 10:38:14.670626'); args=['auth', '0007_alter_validators_add_error_messages', '2018-11-16 10:38:14.670626']
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('auth', '0008_alter_user_username_max_length', '2018-11-16 10:38:14.691147'); args=['auth', '0008_alter_user_username_max_length', '2018-11-16 10:38:14.691147']
+%(asctime)s|execute|CREATE TABLE `app_myuser` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime(6) NULL, `is_superuser` bool NOT NULL, `username` varchar(150) NOT NULL UNIQUE, `first_name` varchar(30) NOT NULL, `last_name` varchar(30) NOT NULL, `email` varchar(254) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime(6) NOT NULL, `phone` varchar(13) NOT NULL, `age` integer NULL); (params None)
+%(asctime)s|execute|(0.013) CREATE TABLE `app_myuser` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `password` varchar(128) NOT NULL, `last_login` datetime(6) NULL, `is_superuser` bool NOT NULL, `username` varchar(150) NOT NULL UNIQUE, `first_name` varchar(30) NOT NULL, `last_name` varchar(30) NOT NULL, `email` varchar(254) NOT NULL, `is_staff` bool NOT NULL, `is_active` bool NOT NULL, `date_joined` datetime(6) NOT NULL, `phone` varchar(13) NOT NULL, `age` integer NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser'; args=['app_myuser']
+%(asctime)s|execute|CREATE TABLE `app_myuser_groups` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `myuser_id` integer NOT NULL, `group_id` integer NOT NULL); (params None)
+%(asctime)s|execute|(0.012) CREATE TABLE `app_myuser_groups` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `myuser_id` integer NOT NULL, `group_id` integer NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser_groups'; args=['app_myuser_groups']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser_groups'; args=['app_myuser_groups']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser_groups'; args=['app_myuser_groups']
+%(asctime)s|execute|CREATE TABLE `app_myuser_user_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `myuser_id` integer NOT NULL, `permission_id` integer NOT NULL); (params None)
+%(asctime)s|execute|(0.019) CREATE TABLE `app_myuser_user_permissions` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `myuser_id` integer NOT NULL, `permission_id` integer NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser_user_permissions'; args=['app_myuser_user_permissions']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser_user_permissions'; args=['app_myuser_user_permissions']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'app_myuser_user_permissions'; args=['app_myuser_user_permissions']
+%(asctime)s|execute|ALTER TABLE `app_myuser_groups` ADD CONSTRAINT `app_myuser_groups_myuser_id_25f874fc_fk_app_myuser_id` FOREIGN KEY (`myuser_id`) REFERENCES `app_myuser` (`id`); (params ())
+%(asctime)s|execute|(0.030) ALTER TABLE `app_myuser_groups` ADD CONSTRAINT `app_myuser_groups_myuser_id_25f874fc_fk_app_myuser_id` FOREIGN KEY (`myuser_id`) REFERENCES `app_myuser` (`id`); args=()
+%(asctime)s|execute|ALTER TABLE `app_myuser_groups` ADD CONSTRAINT `app_myuser_groups_group_id_a43b65d7_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); (params ())
+%(asctime)s|execute|(0.024) ALTER TABLE `app_myuser_groups` ADD CONSTRAINT `app_myuser_groups_group_id_a43b65d7_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`); args=()
+%(asctime)s|execute|ALTER TABLE `app_myuser_groups` ADD CONSTRAINT `app_myuser_groups_myuser_id_group_id_7469ed17_uniq` UNIQUE (`myuser_id`, `group_id`); (params ())
+%(asctime)s|execute|(0.011) ALTER TABLE `app_myuser_groups` ADD CONSTRAINT `app_myuser_groups_myuser_id_group_id_7469ed17_uniq` UNIQUE (`myuser_id`, `group_id`); args=()
+%(asctime)s|execute|ALTER TABLE `app_myuser_user_permissions` ADD CONSTRAINT `app_myuser_user_permissions_myuser_id_307f38bb_fk_app_myuser_id` FOREIGN KEY (`myuser_id`) REFERENCES `app_myuser` (`id`); (params ())
+%(asctime)s|execute|(0.025) ALTER TABLE `app_myuser_user_permissions` ADD CONSTRAINT `app_myuser_user_permissions_myuser_id_307f38bb_fk_app_myuser_id` FOREIGN KEY (`myuser_id`) REFERENCES `app_myuser` (`id`); args=()
+%(asctime)s|execute|ALTER TABLE `app_myuser_user_permissions` ADD CONSTRAINT `app_myuser_user_perm_permission_id_a213832a_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); (params ())
+%(asctime)s|execute|(0.027) ALTER TABLE `app_myuser_user_permissions` ADD CONSTRAINT `app_myuser_user_perm_permission_id_a213832a_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`); args=()
+%(asctime)s|execute|ALTER TABLE `app_myuser_user_permissions` ADD CONSTRAINT `app_myuser_user_permissi_myuser_id_permission_id_283d3363_uniq` UNIQUE (`myuser_id`, `permission_id`); (params ())
+%(asctime)s|execute|(0.011) ALTER TABLE `app_myuser_user_permissions` ADD CONSTRAINT `app_myuser_user_permissi_myuser_id_permission_id_283d3363_uniq` UNIQUE (`myuser_id`, `permission_id`); args=()
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('app', '0001_initial', '2018-11-16 10:38:14.945276'); args=['app', '0001_initial', '2018-11-16 10:38:14.945276']
+%(asctime)s|execute|CREATE TABLE `django_admin_log` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `action_time` datetime(6) NOT NULL, `object_id` longtext NULL, `object_repr` varchar(200) NOT NULL, `action_flag` smallint UNSIGNED NOT NULL, `change_message` longtext NOT NULL, `content_type_id` integer NULL, `user_id` integer NOT NULL); (params None)
+%(asctime)s|execute|(0.028) CREATE TABLE `django_admin_log` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `action_time` datetime(6) NOT NULL, `object_id` longtext NULL, `object_repr` varchar(200) NOT NULL, `action_flag` smallint UNSIGNED NOT NULL, `change_message` longtext NOT NULL, `content_type_id` integer NULL, `user_id` integer NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_admin_log'; args=['django_admin_log']
+%(asctime)s|execute|ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); (params ())
+%(asctime)s|execute|(0.024) ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`); args=()
+%(asctime)s|execute|ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_app_myuser_id` FOREIGN KEY (`user_id`) REFERENCES `app_myuser` (`id`); (params ())
+%(asctime)s|execute|(0.024) ALTER TABLE `django_admin_log` ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_app_myuser_id` FOREIGN KEY (`user_id`) REFERENCES `app_myuser` (`id`); args=()
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0001_initial', '2018-11-16 10:38:15.074762'); args=['admin', '0001_initial', '2018-11-16 10:38:15.074762']
+%(asctime)s|execute|ALTER TABLE `django_admin_log` ALTER COLUMN `action_time` SET DEFAULT %s; (params ['2018-11-16 10:38:15.094383'])
+%(asctime)s|execute|(0.005) ALTER TABLE `django_admin_log` ALTER COLUMN `action_time` SET DEFAULT '2018-11-16 10:38:15.094383'; args=['2018-11-16 10:38:15.094383']
+%(asctime)s|execute|ALTER TABLE `django_admin_log` ALTER COLUMN `action_time` DROP DEFAULT; (params ())
+%(asctime)s|execute|(0.004) ALTER TABLE `django_admin_log` ALTER COLUMN `action_time` DROP DEFAULT; args=()
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('admin', '0002_logentry_remove_auto_add', '2018-11-16 10:38:15.107435'); args=['admin', '0002_logentry_remove_auto_add', '2018-11-16 10:38:15.107435']
+%(asctime)s|execute|CREATE TABLE `djcelery_crontabschedule` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `minute` varchar(64) NOT NULL, `hour` varchar(64) NOT NULL, `day_of_week` varchar(64) NOT NULL, `day_of_month` varchar(64) NOT NULL, `month_of_year` varchar(64) NOT NULL); (params None)
+%(asctime)s|execute|(0.012) CREATE TABLE `djcelery_crontabschedule` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `minute` varchar(64) NOT NULL, `hour` varchar(64) NOT NULL, `day_of_week` varchar(64) NOT NULL, `day_of_month` varchar(64) NOT NULL, `month_of_year` varchar(64) NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_crontabschedule'; args=['djcelery_crontabschedule']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_crontabschedule'; args=['djcelery_crontabschedule']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_crontabschedule'; args=['djcelery_crontabschedule']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_crontabschedule'; args=['djcelery_crontabschedule']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_crontabschedule'; args=['djcelery_crontabschedule']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_crontabschedule'; args=['djcelery_crontabschedule']
+%(asctime)s|execute|CREATE TABLE `djcelery_intervalschedule` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `every` integer NOT NULL, `period` varchar(24) NOT NULL); (params None)
+%(asctime)s|execute|(0.013) CREATE TABLE `djcelery_intervalschedule` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `every` integer NOT NULL, `period` varchar(24) NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_intervalschedule'; args=['djcelery_intervalschedule']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_intervalschedule'; args=['djcelery_intervalschedule']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_intervalschedule'; args=['djcelery_intervalschedule']
+%(asctime)s|execute|CREATE TABLE `djcelery_periodictask` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(200) NOT NULL UNIQUE, `task` varchar(200) NOT NULL, `args` longtext NOT NULL, `kwargs` longtext NOT NULL, `queue` varchar(200) NULL, `exchange` varchar(200) NULL, `routing_key` varchar(200) NULL, `expires` datetime(6) NULL, `enabled` bool NOT NULL, `last_run_at` datetime(6) NULL, `total_run_count` integer UNSIGNED NOT NULL, `date_changed` datetime(6) NOT NULL, `description` longtext NOT NULL, `crontab_id` integer NULL, `interval_id` integer NULL); (params None)
+%(asctime)s|execute|(0.014) CREATE TABLE `djcelery_periodictask` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `name` varchar(200) NOT NULL UNIQUE, `task` varchar(200) NOT NULL, `args` longtext NOT NULL, `kwargs` longtext NOT NULL, `queue` varchar(200) NULL, `exchange` varchar(200) NULL, `routing_key` varchar(200) NULL, `expires` datetime(6) NULL, `enabled` bool NOT NULL, `last_run_at` datetime(6) NULL, `total_run_count` integer UNSIGNED NOT NULL, `date_changed` datetime(6) NOT NULL, `description` longtext NOT NULL, `crontab_id` integer NULL, `interval_id` integer NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictask'; args=['djcelery_periodictask']
+%(asctime)s|execute|CREATE TABLE `djcelery_periodictasks` (`ident` smallint NOT NULL PRIMARY KEY, `last_update` datetime(6) NOT NULL); (params None)
+%(asctime)s|execute|(0.011) CREATE TABLE `djcelery_periodictasks` (`ident` smallint NOT NULL PRIMARY KEY, `last_update` datetime(6) NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictasks'; args=['djcelery_periodictasks']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_periodictasks'; args=['djcelery_periodictasks']
+%(asctime)s|execute|CREATE TABLE `celery_taskmeta` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `task_id` varchar(255) NOT NULL UNIQUE, `status` varchar(50) NOT NULL, `result` longtext NULL, `date_done` datetime(6) NOT NULL, `traceback` longtext NULL, `hidden` bool NOT NULL, `meta` longtext NULL); (params None)
+%(asctime)s|execute|(0.013) CREATE TABLE `celery_taskmeta` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `task_id` varchar(255) NOT NULL UNIQUE, `status` varchar(50) NOT NULL, `result` longtext NULL, `date_done` datetime(6) NOT NULL, `traceback` longtext NULL, `hidden` bool NOT NULL, `meta` longtext NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_taskmeta'; args=['celery_taskmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_taskmeta'; args=['celery_taskmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_taskmeta'; args=['celery_taskmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_taskmeta'; args=['celery_taskmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_taskmeta'; args=['celery_taskmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_taskmeta'; args=['celery_taskmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_taskmeta'; args=['celery_taskmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_taskmeta'; args=['celery_taskmeta']
+%(asctime)s|execute|CREATE TABLE `celery_tasksetmeta` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `taskset_id` varchar(255) NOT NULL UNIQUE, `result` longtext NOT NULL, `date_done` datetime(6) NOT NULL, `hidden` bool NOT NULL); (params None)
+%(asctime)s|execute|(0.013) CREATE TABLE `celery_tasksetmeta` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `taskset_id` varchar(255) NOT NULL UNIQUE, `result` longtext NOT NULL, `date_done` datetime(6) NOT NULL, `hidden` bool NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_tasksetmeta'; args=['celery_tasksetmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_tasksetmeta'; args=['celery_tasksetmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_tasksetmeta'; args=['celery_tasksetmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_tasksetmeta'; args=['celery_tasksetmeta']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'celery_tasksetmeta'; args=['celery_tasksetmeta']
+%(asctime)s|execute|CREATE TABLE `djcelery_taskstate` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `state` varchar(64) NOT NULL, `task_id` varchar(36) NOT NULL UNIQUE, `name` varchar(200) NULL, `tstamp` datetime(6) NOT NULL, `args` longtext NULL, `kwargs` longtext NULL, `eta` datetime(6) NULL, `expires` datetime(6) NULL, `result` longtext NULL, `traceback` longtext NULL, `runtime` double precision NULL, `retries` integer NOT NULL, `hidden` bool NOT NULL); (params None)
+%(asctime)s|execute|(0.015) CREATE TABLE `djcelery_taskstate` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `state` varchar(64) NOT NULL, `task_id` varchar(36) NOT NULL UNIQUE, `name` varchar(200) NULL, `tstamp` datetime(6) NOT NULL, `args` longtext NULL, `kwargs` longtext NULL, `eta` datetime(6) NULL, `expires` datetime(6) NULL, `result` longtext NULL, `traceback` longtext NULL, `runtime` double precision NULL, `retries` integer NOT NULL, `hidden` bool NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|CREATE TABLE `djcelery_workerstate` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `hostname` varchar(255) NOT NULL UNIQUE, `last_heartbeat` datetime(6) NULL); (params None)
+%(asctime)s|execute|(0.014) CREATE TABLE `djcelery_workerstate` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `hostname` varchar(255) NOT NULL UNIQUE, `last_heartbeat` datetime(6) NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_workerstate'; args=['djcelery_workerstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_workerstate'; args=['djcelery_workerstate']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_workerstate'; args=['djcelery_workerstate']
+%(asctime)s|execute|ALTER TABLE `djcelery_taskstate` ADD COLUMN `worker_id` integer NULL; (params [])
+%(asctime)s|execute|(0.021) ALTER TABLE `djcelery_taskstate` ADD COLUMN `worker_id` integer NULL; args=[]
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'djcelery_taskstate'; args=['djcelery_taskstate']
+%(asctime)s|execute|ALTER TABLE `djcelery_periodictask` ADD CONSTRAINT `djcelery_periodictas_crontab_id_75609bab_fk_djcelery_` FOREIGN KEY (`crontab_id`) REFERENCES `djcelery_crontabschedule` (`id`); (params ())
+%(asctime)s|execute|(0.023) ALTER TABLE `djcelery_periodictask` ADD CONSTRAINT `djcelery_periodictas_crontab_id_75609bab_fk_djcelery_` FOREIGN KEY (`crontab_id`) REFERENCES `djcelery_crontabschedule` (`id`); args=()
+%(asctime)s|execute|ALTER TABLE `djcelery_periodictask` ADD CONSTRAINT `djcelery_periodictas_interval_id_b426ab02_fk_djcelery_` FOREIGN KEY (`interval_id`) REFERENCES `djcelery_intervalschedule` (`id`); (params ())
+%(asctime)s|execute|(0.029) ALTER TABLE `djcelery_periodictask` ADD CONSTRAINT `djcelery_periodictas_interval_id_b426ab02_fk_djcelery_` FOREIGN KEY (`interval_id`) REFERENCES `djcelery_intervalschedule` (`id`); args=()
+%(asctime)s|execute|CREATE INDEX `celery_taskmeta_hidden_23fd02dc` ON `celery_taskmeta` (`hidden`); (params ())
+%(asctime)s|execute|(0.010) CREATE INDEX `celery_taskmeta_hidden_23fd02dc` ON `celery_taskmeta` (`hidden`); args=()
+%(asctime)s|execute|CREATE INDEX `celery_tasksetmeta_hidden_593cfc24` ON `celery_tasksetmeta` (`hidden`); (params ())
+%(asctime)s|execute|(0.010) CREATE INDEX `celery_tasksetmeta_hidden_593cfc24` ON `celery_tasksetmeta` (`hidden`); args=()
+%(asctime)s|execute|CREATE INDEX `djcelery_taskstate_state_53543be4` ON `djcelery_taskstate` (`state`); (params ())
+%(asctime)s|execute|(0.010) CREATE INDEX `djcelery_taskstate_state_53543be4` ON `djcelery_taskstate` (`state`); args=()
+%(asctime)s|execute|CREATE INDEX `djcelery_taskstate_name_8af9eded` ON `djcelery_taskstate` (`name`); (params ())
+%(asctime)s|execute|(0.009) CREATE INDEX `djcelery_taskstate_name_8af9eded` ON `djcelery_taskstate` (`name`); args=()
+%(asctime)s|execute|CREATE INDEX `djcelery_taskstate_tstamp_4c3f93a1` ON `djcelery_taskstate` (`tstamp`); (params ())
+%(asctime)s|execute|(0.009) CREATE INDEX `djcelery_taskstate_tstamp_4c3f93a1` ON `djcelery_taskstate` (`tstamp`); args=()
+%(asctime)s|execute|CREATE INDEX `djcelery_taskstate_hidden_c3905e57` ON `djcelery_taskstate` (`hidden`); (params ())
+%(asctime)s|execute|(0.010) CREATE INDEX `djcelery_taskstate_hidden_c3905e57` ON `djcelery_taskstate` (`hidden`); args=()
+%(asctime)s|execute|CREATE INDEX `djcelery_workerstate_last_heartbeat_4539b544` ON `djcelery_workerstate` (`last_heartbeat`); (params ())
+%(asctime)s|execute|(0.011) CREATE INDEX `djcelery_workerstate_last_heartbeat_4539b544` ON `djcelery_workerstate` (`last_heartbeat`); args=()
+%(asctime)s|execute|ALTER TABLE `djcelery_taskstate` ADD CONSTRAINT `djcelery_taskstate_worker_id_f7f57a05_fk_djcelery_workerstate_id` FOREIGN KEY (`worker_id`) REFERENCES `djcelery_workerstate` (`id`); (params ())
+%(asctime)s|execute|(0.035) ALTER TABLE `djcelery_taskstate` ADD CONSTRAINT `djcelery_taskstate_worker_id_f7f57a05_fk_djcelery_workerstate_id` FOREIGN KEY (`worker_id`) REFERENCES `djcelery_workerstate` (`id`); args=()
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('djcelery', '0001_initial', '2018-11-16 10:38:15.605192'); args=['djcelery', '0001_initial', '2018-11-16 10:38:15.605192']
+%(asctime)s|execute|CREATE TABLE `django_session` (`session_key` varchar(40) NOT NULL PRIMARY KEY, `session_data` longtext NOT NULL, `expire_date` datetime(6) NOT NULL); (params None)
+%(asctime)s|execute|(0.014) CREATE TABLE `django_session` (`session_key` varchar(40) NOT NULL PRIMARY KEY, `session_data` longtext NOT NULL, `expire_date` datetime(6) NOT NULL); args=None
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_session'; args=['django_session']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_session'; args=['django_session']
+%(asctime)s|execute|(0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_session'; args=['django_session']
+%(asctime)s|execute|CREATE INDEX `django_session_expire_date_a5c62663` ON `django_session` (`expire_date`); (params ())
+%(asctime)s|execute|(0.009) CREATE INDEX `django_session_expire_date_a5c62663` ON `django_session` (`expire_date`); args=()
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) INSERT INTO `django_migrations` (`app`, `name`, `applied`) VALUES ('sessions', '0001_initial', '2018-11-16 10:38:15.655552'); args=['sessions', '0001_initial', '2018-11-16 10:38:15.655552']
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry'); args=('admin', 'logentry')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry'); args=('admin', 'logentry')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('admin', 'logentry'); args=['admin', 'logentry']
+%(asctime)s|execute|(0.003) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(1,)
+%(asctime)s|execute|(0.003) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add log entry', 1, 'add_logentry'), ('Can change log entry', 1, 'change_logentry'), ('Can delete log entry', 1, 'delete_logentry'); args=('Can add log entry', 1, 'add_logentry', 'Can change log entry', 1, 'change_logentry', 'Can delete log entry', 1, 'delete_logentry')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'; args=('admin',)
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission'); args=('auth', 'permission')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission'); args=('auth', 'permission')
+%(asctime)s|execute|(0.005) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('auth', 'permission'); args=['auth', 'permission']
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group'); args=('auth', 'group')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group'); args=('auth', 'group')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('auth', 'group'); args=['auth', 'group']
+%(asctime)s|execute|(0.003) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(2, 3)
+%(asctime)s|execute|(0.003) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add permission', 2, 'add_permission'), ('Can change permission', 2, 'change_permission'), ('Can delete permission', 2, 'delete_permission'), ('Can add group', 3, 'add_group'), ('Can change group', 3, 'change_group'), ('Can delete group', 3, 'delete_group'); args=('Can add permission', 2, 'add_permission', 'Can change permission', 2, 'change_permission', 'Can delete permission', 2, 'delete_permission', 'Can add group', 3, 'add_group', 'Can change group', 3, 'change_group', 'Can delete group', 3, 'delete_group')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'; args=('auth',)
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype'); args=('contenttypes', 'contenttype')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype'); args=('contenttypes', 'contenttype')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('contenttypes', 'contenttype'); args=['contenttypes', 'contenttype']
+%(asctime)s|execute|(0.003) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(4,)
+%(asctime)s|execute|(0.003) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add content type', 4, 'add_contenttype'), ('Can change content type', 4, 'change_contenttype'), ('Can delete content type', 4, 'delete_contenttype'); args=('Can add content type', 4, 'add_contenttype', 'Can change content type', 4, 'change_contenttype', 'Can delete content type', 4, 'delete_contenttype')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'; args=('contenttypes',)
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session'); args=('sessions', 'session')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session'); args=('sessions', 'session')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('sessions', 'session'); args=['sessions', 'session']
+%(asctime)s|execute|(0.003) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(5,)
+%(asctime)s|execute|(0.003) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add session', 5, 'add_session'), ('Can change session', 5, 'change_session'), ('Can delete session', 5, 'delete_session'); args=('Can add session', 5, 'add_session', 'Can change session', 5, 'change_session', 'Can delete session', 5, 'delete_session')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'; args=('sessions',)
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'app' AND `django_content_type`.`model` = 'myuser'); args=('app', 'myuser')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'app' AND `django_content_type`.`model` = 'myuser'); args=('app', 'myuser')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('app', 'myuser'); args=['app', 'myuser']
+%(asctime)s|execute|(0.003) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (6) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(6,)
+%(asctime)s|execute|(0.003) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add user', 6, 'add_myuser'), ('Can change user', 6, 'change_myuser'), ('Can delete user', 6, 'delete_myuser'); args=('Can add user', 6, 'add_myuser', 'Can change user', 6, 'change_myuser', 'Can delete user', 6, 'delete_myuser')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'app'; args=('app',)
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'workerstate'); args=('djcelery', 'workerstate')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'workerstate'); args=('djcelery', 'workerstate')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('djcelery', 'workerstate'); args=['djcelery', 'workerstate']
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'periodictask'); args=('djcelery', 'periodictask')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'periodictask'); args=('djcelery', 'periodictask')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('djcelery', 'periodictask'); args=['djcelery', 'periodictask']
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'tasksetmeta'); args=('djcelery', 'tasksetmeta')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'tasksetmeta'); args=('djcelery', 'tasksetmeta')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('djcelery', 'tasksetmeta'); args=['djcelery', 'tasksetmeta']
+%(asctime)s|execute|(0.006) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'taskstate'); args=('djcelery', 'taskstate')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'taskstate'); args=('djcelery', 'taskstate')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('djcelery', 'taskstate'); args=['djcelery', 'taskstate']
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'crontabschedule'); args=('djcelery', 'crontabschedule')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'crontabschedule'); args=('djcelery', 'crontabschedule')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('djcelery', 'crontabschedule'); args=['djcelery', 'crontabschedule']
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'periodictasks'); args=('djcelery', 'periodictasks')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'periodictasks'); args=('djcelery', 'periodictasks')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('djcelery', 'periodictasks'); args=['djcelery', 'periodictasks']
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'taskmeta'); args=('djcelery', 'taskmeta')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'taskmeta'); args=('djcelery', 'taskmeta')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('djcelery', 'taskmeta'); args=['djcelery', 'taskmeta']
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'intervalschedule'); args=('djcelery', 'intervalschedule')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'djcelery' AND `django_content_type`.`model` = 'intervalschedule'); args=('djcelery', 'intervalschedule')
+%(asctime)s|execute|(0.003) INSERT INTO `django_content_type` (`app_label`, `model`) VALUES ('djcelery', 'intervalschedule'); args=['djcelery', 'intervalschedule']
+%(asctime)s|execute|(0.003) SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (7, 8, 9, 10, 11, 12, 13, 14) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC; args=(7, 8, 9, 10, 11, 12, 13, 14)
+%(asctime)s|execute|(0.003) INSERT INTO `auth_permission` (`name`, `content_type_id`, `codename`) VALUES ('Can add worker', 7, 'add_workerstate'), ('Can change worker', 7, 'change_workerstate'), ('Can delete worker', 7, 'delete_workerstate'), ('Can add periodic task', 8, 'add_periodictask'), ('Can change periodic task', 8, 'change_periodictask'), ('Can delete periodic task', 8, 'delete_periodictask'), ('Can add saved group result', 9, 'add_tasksetmeta'), ('Can change saved group result', 9, 'change_tasksetmeta'), ('Can delete saved group result', 9, 'delete_tasksetmeta'), ('Can add task', 10, 'add_taskstate'), ('Can change task', 10, 'change_taskstate'), ('Can delete task', 10, 'delete_taskstate'), ('Can add crontab', 11, 'add_crontabschedule'), ('Can change crontab', 11, 'change_crontabschedule'), ('Can delete crontab', 11, 'delete_crontabschedule'), ('Can add periodic tasks', 12, 'add_periodictasks'), ('Can change periodic tasks', 12, 'change_periodictasks'), ('Can delete periodic tasks', 12, 'delete_periodictasks'), ('Can add task state', 13, 'add_taskmeta'), ('Can change task state', 13, 'change_taskmeta'), ('Can delete task state', 13, 'delete_taskmeta'), ('Can add interval', 14, 'add_intervalschedule'), ('Can change interval', 14, 'change_intervalschedule'), ('Can delete interval', 14, 'delete_intervalschedule'); args=('Can add worker', 7, 'add_workerstate', 'Can change worker', 7, 'change_workerstate', 'Can delete worker', 7, 'delete_workerstate', 'Can add periodic task', 8, 'add_periodictask', 'Can change periodic task', 8, 'change_periodictask', 'Can delete periodic task', 8, 'delete_periodictask', 'Can add saved group result', 9, 'add_tasksetmeta', 'Can change saved group result', 9, 'change_tasksetmeta', 'Can delete saved group result', 9, 'delete_tasksetmeta', 'Can add task', 10, 'add_taskstate', 'Can change task', 10, 'change_taskstate', 'Can delete task', 10, 'delete_taskstate', 'Can add crontab', 11, 'add_crontabschedule', 'Can change crontab', 11, 'change_crontabschedule', 'Can delete crontab', 11, 'delete_crontabschedule', 'Can add periodic tasks', 12, 'add_periodictasks', 'Can change periodic tasks', 12, 'change_periodictasks', 'Can delete periodic tasks', 12, 'delete_periodictasks', 'Can add task state', 13, 'add_taskmeta', 'Can change task state', 13, 'change_taskmeta', 'Can delete task state', 13, 'delete_taskmeta', 'Can add interval', 14, 'add_intervalschedule', 'Can change interval', 14, 'change_intervalschedule', 'Can delete interval', 14, 'delete_intervalschedule')
+%(asctime)s|execute|(0.003) SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'djcelery'; args=('djcelery',)
+%(asctime)s|execute|(0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+%(asctime)s|execute|(0.001) SELECT VERSION(); args=None
+%(asctime)s|execute|(0.003) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+%(asctime)s|execute|(0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+%(asctime)s|execute|(0.002) SELECT VERSION(); args=None
+%(asctime)s|execute|(0.004) SHOW FULL TABLES; args=None
+%(asctime)s|execute|(0.004) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
